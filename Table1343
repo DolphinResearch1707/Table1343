@@ -1,0 +1,28 @@
+<?php>
+$con=mysql_connect("localhost","dhruv","abcd1234");
+if  ($con)
+{
+//create database
+if (mysql_query("CREATE DATABASE my_d,$co))
+{
+echo "Database Created";
+}
+else
+{
+echo "Error creating database:" mysql_error();
+}
+echo "Error Creating Database:"mysql1_error();
+}
+//create table
+mysql_select_d("my_d",$co);
+$sql="create table Persons"
+(
+FirstName varchar(15),
+LastName varchar(15),
+Age int
+)"
+//Execute Query
+mySql_Query($sql,$co);
+mysql_close($co);
+?>
+
